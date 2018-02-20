@@ -1,3 +1,3 @@
-# wxpython-linux-i686
+# inkstitch-build-objects
 
-This repo exists to serve as a place to store a 32-bit Linux wxPython wheel.  See the Releases section for a download link.
+This repo exists to serve as a place to store various pre-built bits used in the inkstitch build.
