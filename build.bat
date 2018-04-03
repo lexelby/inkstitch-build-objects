@@ -1,4 +1,6 @@
 SET PATH=C:\MinGW\bin;%PATH%
+
+gcc -c -I../libembroidery -Ipython/binding -I../../../Python/include python/binding/swig_wrap.c
 gcc -c -I../libembroidery -Ipython/binding -I../../../Python/include ../libembroidery/compound-file.c
 gcc -c -I../libembroidery -Ipython/binding -I../../../Python/include ../libembroidery/compound-file-difat.c
 gcc -c -I../libembroidery -Ipython/binding -I../../../Python/include ../libembroidery/compound-file-directory.c
@@ -98,4 +100,4 @@ gcc -c -I../libembroidery -Ipython/binding -I../../../Python/include ../libembro
 gcc -c -I../libembroidery -Ipython/binding -I../../../Python/include ../libembroidery/format-zsk.c
 gcc -c -I../libembroidery -Ipython/binding -I../../../Python/include ../libembroidery/geom-arc.c
 gcc -c -I../libembroidery -Ipython/binding -I../../../Python/include ../libembroidery/geom-line.c
-gcc -shared -o python/binding/libembroidery.pyd *.o -L c:\Pythongcc -shared -o python/binding/_libembroidery.pyd *.o -L c:\Python\libs -lpython27
+gcc -shared -o python/binding/_libembroidery.pyd *.o -L c:\Python\libs -lpython27
